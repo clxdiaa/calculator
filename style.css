@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.calculator {
+    width: 260px; /* Adjusted width to fit buttons */
+    border: 2px solid #333;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+#display {
+    height: 60px;
+    background-color: #222;
+    color: #fff;
+    font-size: 2.5em;
+    text-align: right;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    font-size: 1.5em;
+    padding: 15px 0;
+    background-color: #eee;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.operator {
+    background-color: #ff9500;
+    color: white;
+}
+
+button#equals {
+    grid-column: span 2; /* Span two columns for equals button */
+}
+
+button#equals {
+    background-color: #ff9500; /* Operator color */
+    color: white;
+}
